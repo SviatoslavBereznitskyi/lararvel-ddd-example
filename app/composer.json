@@ -5,12 +5,18 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": ">=7.4",
+        "doctrine/dbal": "2.*",
+        "doctrine/inflector": "^1.4|^2.0",
+        "doctrine/orm": "^2.8",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "laravel-doctrine/migrations": "^2.3",
+        "laravel-doctrine/orm": "^1.7",
         "laravel/framework": "^8.40",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "league/fractal": "^0.19.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

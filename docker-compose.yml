@@ -24,15 +24,15 @@ services:
   php:
     #    build:
     #      context: ./docker/php
-    image: nanoninja/php-fpm:${PHP_VERSION}
+    image: nanoninja/php-fpm:7.4.10
     restart: always
     volumes:
       - "./docker/php/php.ini:/usr/local/etc/php/php.ini"
       - "./app:/var/www/html"
   composer:
-    image: "composer"
+    image: composer:2
     volumes:
-      - "./app:/var/www/html"
+      - "./app:/app"
     command: install --ignore-platform-reqs
   mysqldb:
     image: mysql:${MYSQL_VERSION}
